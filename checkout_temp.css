@@ -1,0 +1,464 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #fbfbfb;
+}
+
+.box-body{
+    width: 100%;
+    height: 100%;
+   background:  #5a5034;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.tb1-carving{
+    width: 100%;
+    border: none;
+    animation-name: tb1-ani;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+    
+    background-color: rgba(23, 19, 0,0.5);
+    transition: 0.5s;
+}
+
+@keyframes tb1-ani{
+    0%{
+        height: 0%;
+
+    }
+    100%{
+        height:12%;
+    }
+}
+
+
+
+.col2_1{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.div-logo-outer{
+    width:20vh;
+    height:10vh;
+    display:flex;
+    align-items:center;
+}
+
+.left{
+    width: 90%;
+    height: 90%;
+    background-image: url(school.png);
+    background-size:40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.backButton{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:transparent;
+    border-style:solid;
+    border-radius:15vh;
+    border-color: #fcefdb;
+    outline:none;
+    cursor:pointer;
+    color:#fcefdb;
+    width: 23vh;
+    height: 5.5vh;
+    margin-left:auto;
+    margin-right:5%;
+    font-family: "Poppins",sans-serif;
+    transition: 0.5s;
+}
+
+.backButton:hover{
+    background-color: #d7ad7b;
+    border-color: #d7ad7b;
+    box-shadow: 0px 0px 5px black;
+    transition: 0.5s;
+    color:black;
+}
+
+.backButton-anchor{    
+    text-decoration:none;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-weight:lighter;
+    font-size:100%;
+    width:100%;
+    height:100%;
+}
+
+.backButton-anchor:hover{
+    transition:0.5s;
+    color:black;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.product-box1{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.box-product-body{
+    width: 100%;
+    height: 88vh;    
+}
+
+.box-product-body-inner{
+    width: 100vh;
+    height: 100%;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background: black;
+}
+
+.div-product-img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+}
+
+.magnify{
+    max-width: 90%;
+    max-height: 70%;
+}
+
+
+.other-img-div{
+    width: 100%;
+    height: 40vh;
+    background: red;
+    position: relative;
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.other-img-div-inner{
+    width: 100%;
+    height: 100%;
+    background: #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+img{
+    margin-left: 2%;
+}
+
+
+.product-details{
+    width: 70%;
+    height: 100%;
+    position: relative;
+    background: #ebdfba; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-input-form{
+    width: 100%;
+    height: 100%;
+    margin: 0% auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name{
+    font-family: calibri Light;
+    font-size: 4vh;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.name-session{
+    font-weight: bold;
+    font-family: "Poppins",sans-serif;
+    font-size: 4vh;
+    color: black;
+    background:  #ebdfba;
+    pointer-events: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: center;
+}
+
+.user-input-field{
+    width: 70%;
+    margin: 15px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    color: black;
+    border-bottom: 2px solid #000;
+    outline: none;
+    background-color: #ebdfba;
+    font-size: 2.1vh;
+    font-family: "Poppins",sans-serif;
+    cursor:pointer;
+    transition: 0.5s;
+    font-family: "Poppins",sans-serif;
+    padding-top: 10px;
+    margin-top: 2%;
+}
+
+.user-input-field-change{
+    width: 70%;
+    margin: 15px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    color: #714242;
+    border-bottom: 2px solid #806e3e;
+    outline: none;
+    background-color: #ebdfba;
+    cursor:pointer;
+    transition: 0.5s;
+    padding-top: 10px;
+    animation-name: input;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes input{
+    0%{
+      font-size:80%;
+    }
+    50%{
+        font-size:85%;
+    }
+    100%{
+        font-size:90%;
+    }
+}
+
+::placeholder { 
+    color: #3d2002;
+    font-weight: lighter;
+    font-size: 2.1vh;
+    font-family: "Poppins",sans-serif;
+    transition:0.5s;
+}
+
+.country{
+    transition: 0.5s;
+    background: transparent;
+    color: black;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+
+
+.user-input-select{
+   width: 70%;
+    margin: 15px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    color: black;
+    font-family: sans-serif;
+    font-size: 100%;
+    border-bottom: 2px solid #000;
+    outline: none;
+    background-color: transparent;
+    cursor:pointer;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+
+
+.user-input-select-change{
+    width: 70%;
+    margin: 15px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    color: white;
+    font-family: sans-serif;
+    font-size:100%;
+    border-bottom: 2px solid #ffd77c;
+    outline: none;
+    background-color: transparent;
+    cursor:pointer;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2vh;
+    padding-top: 4vh;
+}
+
+.btn-purchase{
+    width: 20vh;
+    height: 7vh;
+    margin-left:2%;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
+    font-family: "Poppins",sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #ca8c4e;
+    border: 0;
+    border-radius: 5vh;
+}
+
+.btn-purchase:hover{
+    transition: 0.5s;
+    border-style: solid;
+    border-color: #eeeeee;
+    background: #915b24;
+    color: white;
+    font-weight: lighter;
+    color: white;
+    outline: none;
+    border-radius: 25px;
+    box-shadow: 0px 0px 0px #714242;
+}
+
+.anchorBack{
+    color: black;
+    text-decoration: none;
+}
+
+.popup-div{
+    position: absolute;
+    width:480px;
+    height: 50%;
+    margin-left: 30%;
+    margin-top: 10%;
+    background: white;
+    box-shadow: 0px 0px 50px black;
+}
+
+
+.div-ft{
+    width: 100%;
+    height: 20vh;
+    background: red;
+    font-family: "Poppins",sans-serif;
+}
+
+
+@media screen and (max-width:1024px){
+    .box-product-body-inner{
+        width: 400px;
+        height: 100%;
+        position: relative;
+        align-items: center;    
+        margin: 20% auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .product{
+        width: 100%;
+        position: relative;
+        height: 100%;
+    }
+
+    .div-product-img{
+        width: 100%;
+        border-radius: 0px;
+        height:100%;
+    }
+
+.magnify{
+max-width:100%;
+max-height:65%;
+}
+
+    .product-details{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        text-align:center;
+    background: #ebdfba; 
+    }
+
+
+    .spHead{
+        margin-left: 0%;
+    }
+
+    .spdesc{
+        margin-left: 0%;
+    }
+
+    .price{
+        margin-left: 0%;
+    }
+
+    .btn-purchase{
+        margin-left:0%;
+    }
+
+    .product-box1-display{
+        display: none;
+    }
+
+    .box-product-body-display{
+        display: none;
+    }
+
+    .product-display{
+        display: none;
+    }
+
+    .div-product-img-display{
+        display: none;
+    }
+
+    .product-details-display{
+        display: none;
+    }
+  .col0{
+    width: 10%;
+    height: 100%;
+}
+
+.col0_1{
+    width: 26%;
+    height: 100%;
+}
+}

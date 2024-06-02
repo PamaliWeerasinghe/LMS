@@ -1,0 +1,33 @@
+.i1{
+    background-image: url("Thesis.gif");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+}
+.i2{
+    background-image: url("school.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    height:10vh;
+   
+}
+.notes{
+    background-color: white;
+    /* height: 30vh; */
+    
+}
+.i3{
+    background-image: url("High School-cuate.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: aqua; */
+   width: 100%;
+   height: 90vh;
+   /* //margin-left: 10%; */
+   overflow-y:hidden;
+}
+body{
+    overflow-x: hidden;
+}
